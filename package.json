@@ -34,6 +34,7 @@
     "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:staged": "yarn test -- --findRelatedTests",
+    "test:watch": "yarn test -- --watch",
     "lint": "eslint src/**/*"
   },
   "dependencies": {
