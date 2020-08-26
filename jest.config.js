@@ -12,5 +12,5 @@ module.exports = {
   },
   testMatch: [
     '<rootDir>/src/**/*.spec.ts',
-  ]
+  ],
 };
