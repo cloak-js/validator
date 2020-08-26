@@ -21,5 +21,6 @@ module.exports = {
   ],
   ignore: [
     '**/*.spec.ts',
+    './src/tests',
   ],
 };
