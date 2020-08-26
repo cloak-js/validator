@@ -28,7 +28,7 @@
     "typescript": "^4.0.2"
   },
   "scripts": {
-    "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored",
+    "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start",
     "test": "jest --passWithNoTests",
     "lint": "eslint src/**/*"
   },
