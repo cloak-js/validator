@@ -25,6 +25,7 @@
   },
   "scripts": {
     "build": "babel src --out-dir dist --extensions \".ts\" --copy-files",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src/**/*"
   }
 }
