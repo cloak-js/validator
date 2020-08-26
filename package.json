@@ -32,7 +32,8 @@
   },
   "scripts": {
     "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start",
-    "test": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:staged": "yarn test -- --findRelatedTests",
     "lint": "eslint src/**/*"
   },
   "dependencies": {
