@@ -23,6 +23,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
     "faker": "^5.0.0",
+    "git-commit-msg-linter": "^2.4.5",
     "husky": "^4.2.5",
     "jest": "^26.4.2",
     "lint-staged": "^10.2.13",
