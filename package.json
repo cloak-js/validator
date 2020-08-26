@@ -1,0 +1,7 @@
+{
+  "name": "cloak-validator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gustavo Gentil",
+  "license": "ISC"
+}
