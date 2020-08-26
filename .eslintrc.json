@@ -13,9 +13,7 @@
   ],
   "settings": {
     "import/resolver": {
-      "node": {
-        "extensions": [".ts"]
-      }
+      "typescript": {}
     }
   },
   "rules": {
