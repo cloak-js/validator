@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/cloak-js/validator/compare/v1.1.0...v1.2.0) (2020-08-27)
+
+
+### Features
+
+* ensure the rule builder registers an instance of ValidatorBooleanValidationRule ([b2d2239](https://github.com/cloak-js/validator/commit/b2d2239e6614b6e2920c9b5de2061e9d01b133de))
+* ensure ValidatorBooleanValidationRule calls isBoolean with the correct values ([1e2757e](https://github.com/cloak-js/validator/commit/1e2757e51d303415a85e0e6bb616a66f114277b9))
+
 # [1.1.0](https://github.com/cloak-js/validator/compare/v1.0.0...v1.1.0) (2020-08-27)
 
 
