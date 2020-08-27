@@ -162,4 +162,16 @@ describe('Validation rule factory', () => {
 
     expect(alphanumericSpy).toHaveBeenCalled();
   });
+
+  it('builds a BooleanValidationRule with the correct values', () => {
+    const builderSpy = new ValidationBuilderSpy();
+
+    jest.spyOn(ValidationRuleBuilderFactory, 'make').mockReturnValue(builderSpy);
+
+    const booleanSpy = jest.spyOn(builderSpy, 'boolean');
+
+    ValidationRuleFactory.make('boolean');
+
+    expect(booleanSpy).toHaveBeenCalled();
+  });
 });
