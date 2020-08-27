@@ -57,6 +57,7 @@
     "url": "https://github.com/cloak-js/validator.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
