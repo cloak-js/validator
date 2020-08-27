@@ -1,9 +1,17 @@
 import { ValidationRule } from '@/protocols/validation-rule';
 import { Validation } from '@/protocols/validation';
+import validator from 'validator';
 
 class ValidatorBooleanValidationRule implements ValidationRule {
   passes(name: string, value: string): Validation {
-    throw new Error('Method not implemented.');
+    const passed = validator.isBoolean(value);
+
+    return {
+      passed,
+      name,
+      messages: passed ? [] : [`The ${name} field must be true or false.`],
+      received: value,
+    };
   }
 }
 
