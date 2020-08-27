@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/cloak-js/validator/compare/v1.0.0...v1.1.0) (2020-08-27)
+
+
+### Features
+
+* ensure rule builder register an instance of alphanumeric validation rule ([d39144a](https://github.com/cloak-js/validator/commit/d39144a4cd8277c102ffe2f02732c002dff3ea1d))
+* ensure ValidatorAlphanumericValidationRule works calls isAlphanumeric correctly ([c965f84](https://github.com/cloak-js/validator/commit/c965f84c4ae123d98479b0b5746fe0e383c2bae2))
+
 # 1.0.0 (2020-08-27)
 
 
