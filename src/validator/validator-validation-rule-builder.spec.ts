@@ -11,6 +11,7 @@ import {
   ValidatorNumericValidationRule,
   ValidatorEqualsValidationRule,
   ValidatorRegexValidationRule,
+  ValidatorAlphanumericValidationRule,
 } from '@/validator/rules';
 
 const makeSut = (): ValidatorValidationRuleBuilder => new ValidatorValidationRuleBuilder();
@@ -74,6 +75,12 @@ describe('Validator validation builder', () => {
     const sut = makeSut().regex('');
 
     expect(sut.rules[0]).toBeInstanceOf(ValidatorRegexValidationRule);
+  });
+
+  it('registers a ValidatorAlphanumericValidationRule', () => {
+    const sut = makeSut().alphanumeric();
+
+    expect(sut.rules[0]).toBeInstanceOf(ValidatorAlphanumericValidationRule);
   });
 
   it('returns all rules', () => {

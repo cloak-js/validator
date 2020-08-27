@@ -150,4 +150,16 @@ describe('Validation rule factory', () => {
 
     expect(regexSpy).toHaveBeenCalledWith(pattern);
   });
+
+  it('builds an AlphanumericValidationRule with the correct values', () => {
+    const builderSpy = new ValidationBuilderSpy();
+
+    jest.spyOn(ValidationRuleBuilderFactory, 'make').mockReturnValue(builderSpy);
+
+    const alphanumericSpy = jest.spyOn(builderSpy, 'alphanumeric');
+
+    ValidationRuleFactory.make('alphanumeric');
+
+    expect(alphanumericSpy).toHaveBeenCalled();
+  });
 });
