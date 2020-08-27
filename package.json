@@ -1,8 +1,8 @@
 {
-  "name": "cloak-validator",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Gustavo Gentil",
+  "name": "@cloak-js/validator",
+  "version": "0.0.0-development",
+  "main": "./dist/index.common.js",
+  "author": "Gustavo Gentil <gustavorgentil@outlook.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -39,7 +39,17 @@
     "test:watch": "yarn test -- --watch",
     "lint": "eslint src/**/*"
   },
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "validator": "^13.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloak-js/validator.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
