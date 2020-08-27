@@ -57,6 +57,6 @@
     "url": "https://github.com/cloak-js/validator.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
