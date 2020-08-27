@@ -1,9 +1,17 @@
 import { ValidationRule } from '@/protocols/validation-rule';
 import { Validation } from '@/protocols/validation';
+import validator from 'validator';
 
 class ValidatorAlphanumericValidationRule implements ValidationRule {
   passes(name: string, value: string): Validation {
-    throw new Error('Method not implemented.');
+    const passed = validator.isAlphanumeric(value);
+
+    return {
+      passed,
+      name,
+      messages: passed ? [] : [`The ${name} may only contain letters and numbers.`],
+      received: value,
+    };
   }
 }
 
