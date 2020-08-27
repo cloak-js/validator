@@ -10,3 +10,4 @@ export { default as ValidatorNumericValidationRule } from './validator-numeric-v
 export { default as ValidatorEqualsValidationRule } from './validator-equals-validation-rule';
 export { default as ValidatorRegexValidationRule } from './validator-regex-validation-rule';
 export { default as ValidatorAlphanumericValidationRule } from './validator-alphanumeric-validation-rule';
+export { default as ValidatorBooleanValidationRule } from './validator-boolean-validation-rule';

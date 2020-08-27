@@ -54,6 +54,10 @@ export default class ValidationBuilderSpy implements ValidationRuleBuilder {
     return {} as any;
   }
 
+  boolean(): ValidationBuilderSpy {
+    return {} as any;
+  }
+
   build(): ValidationRule[] {
     return this.rules;
   }

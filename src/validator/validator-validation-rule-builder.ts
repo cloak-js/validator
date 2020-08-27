@@ -11,6 +11,7 @@ import {
   ValidatorEqualsValidationRule,
   ValidatorRegexValidationRule,
   ValidatorAlphanumericValidationRule,
+  ValidatorBooleanValidationRule,
 } from '@/validator/rules';
 import { ValidationRule } from '@/protocols/validation-rule';
 
@@ -87,6 +88,12 @@ class ValidatorValidationRuleBuilder implements ValidationRuleBuilder {
 
   regex(pattern: string): ValidatorValidationRuleBuilder {
     this.rules.push(new ValidatorRegexValidationRule(pattern));
+
+    return this;
+  }
+
+  boolean(): ValidatorValidationRuleBuilder {
+    this.rules.push(new ValidatorBooleanValidationRule());
 
     return this;
   }
