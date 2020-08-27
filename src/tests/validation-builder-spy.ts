@@ -50,6 +50,10 @@ export default class ValidationBuilderSpy implements ValidationRuleBuilder {
     return {} as any;
   }
 
+  alphanumeric(): ValidationBuilderSpy {
+    return {} as any;
+  }
+
   build(): ValidationRule[] {
     return this.rules;
   }

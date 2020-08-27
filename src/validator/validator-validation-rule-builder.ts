@@ -10,6 +10,7 @@ import {
   ValidatorNumericValidationRule,
   ValidatorEqualsValidationRule,
   ValidatorRegexValidationRule,
+  ValidatorAlphanumericValidationRule,
 } from '@/validator/rules';
 import { ValidationRule } from '@/protocols/validation-rule';
 
@@ -68,6 +69,12 @@ class ValidatorValidationRuleBuilder implements ValidationRuleBuilder {
 
   numeric(): ValidatorValidationRuleBuilder {
     this.rules.push(new ValidatorNumericValidationRule());
+
+    return this;
+  }
+
+  alphanumeric(): ValidatorValidationRuleBuilder {
+    this.rules.push(new ValidatorAlphanumericValidationRule());
 
     return this;
   }

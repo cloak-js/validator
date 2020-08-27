@@ -9,3 +9,4 @@ export { default as ValidatorUrlValidationRule } from './validator-url-validatio
 export { default as ValidatorNumericValidationRule } from './validator-numeric-validation-rule';
 export { default as ValidatorEqualsValidationRule } from './validator-equals-validation-rule';
 export { default as ValidatorRegexValidationRule } from './validator-regex-validation-rule';
+export { default as ValidatorAlphanumericValidationRule } from './validator-alphanumeric-validation-rule';
