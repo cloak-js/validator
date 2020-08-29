@@ -3,13 +3,14 @@
   "version": "1.2.0",
   "author": "Gustavo Gentil <gustavorgentil@outlook.com>",
   "license": "ISC",
+  "types": "./dist",
   "scripts": {
     "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start && npm run ts:declare",
     "ts:declare": "tsc --project tsconfig.declare.json --declaration --declarationMap --emitDeclarationOnly",
     "lint": "eslint src/**/*",
     "test": "jest --passWithNoTests --no-cache --runInBand",
-    "test:staged": "yarn test -- --findRelatedTests",
-    "test:watch": "yarn test -- --watch"
+    "test:staged": "npm run test -- --findRelatedTests",
+    "test:watch": "npm run test -- --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
