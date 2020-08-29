@@ -13,8 +13,8 @@ import {
   ValidatorRegexValidationRule,
   ValidatorAlphanumericValidationRule,
   ValidatorBooleanValidationRule,
+  ValidatorSlugValidationRule,
 } from '@/validator/rules';
-import ValidatorSlugValidationRule from './rules/validator-slug-validation-rule';
 
 const makeSut = (): ValidatorValidationRuleBuilder => new ValidatorValidationRuleBuilder();
 
