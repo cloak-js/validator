@@ -14,6 +14,7 @@ import {
   ValidatorBooleanValidationRule,
 } from '@/validator/rules';
 import { ValidationRule } from '@/protocols/validation-rule';
+import ValidatorSlugValidationRule from './rules/validator-slug-validation-rule';
 
 class ValidatorValidationRuleBuilder implements ValidationRuleBuilder {
   public readonly rules: ValidationRule[];
@@ -94,6 +95,12 @@ class ValidatorValidationRuleBuilder implements ValidationRuleBuilder {
 
   boolean(): ValidatorValidationRuleBuilder {
     this.rules.push(new ValidatorBooleanValidationRule());
+
+    return this;
+  }
+
+  slug(): ValidatorValidationRuleBuilder {
+    this.rules.push(new ValidatorSlugValidationRule());
 
     return this;
   }

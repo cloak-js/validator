@@ -13,6 +13,7 @@ interface ValidationRuleBuilder {
   regex(pattern: string): ValidationRuleBuilder;
   alphanumeric(): ValidationRuleBuilder;
   boolean(): ValidationRuleBuilder;
+  slug(): ValidationRuleBuilder;
   build(): ValidationRule[];
 }
 
