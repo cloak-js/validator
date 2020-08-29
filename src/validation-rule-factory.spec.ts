@@ -174,4 +174,16 @@ describe('Validation rule factory', () => {
 
     expect(booleanSpy).toHaveBeenCalled();
   });
+
+  it('builds a SlugValidationRule with the correct values', () => {
+    const builderSpy = new ValidationBuilderSpy();
+
+    jest.spyOn(ValidationRuleBuilderFactory, 'make').mockReturnValue(builderSpy);
+
+    const slugSpy = jest.spyOn(builderSpy, 'slug');
+
+    ValidationRuleFactory.make('slug');
+
+    expect(slugSpy).toHaveBeenCalled();
+  });
 });
