@@ -1,15 +1,15 @@
 {
   "name": "@cloak-js/validator",
   "version": "1.2.0",
-  "main": "./dist/index.js",
   "author": "Gustavo Gentil <gustavorgentil@outlook.com>",
   "license": "ISC",
   "scripts": {
-    "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start",
+    "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start && npm run ts:declare",
+    "ts:declare": "tsc --project tsconfig.declare.json --declaration --declarationMap --emitDeclarationOnly",
+    "lint": "eslint src/**/*",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:staged": "yarn test -- --findRelatedTests",
-    "test:watch": "yarn test -- --watch",
-    "lint": "eslint src/**/*"
+    "test:watch": "yarn test -- --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",

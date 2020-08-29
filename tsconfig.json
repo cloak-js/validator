@@ -9,6 +9,7 @@
     ],
     "outDir": "./dist",
     "rootDir": "./src",
+    "sourceMap": true,
     "removeComments": true,
     "typeRoots": [
       "./node_modules/@types",
