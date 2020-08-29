@@ -12,9 +12,9 @@ import {
   ValidatorRegexValidationRule,
   ValidatorAlphanumericValidationRule,
   ValidatorBooleanValidationRule,
+  ValidatorSlugValidationRule,
 } from '@/validator/rules';
 import { ValidationRule } from '@/protocols/validation-rule';
-import ValidatorSlugValidationRule from './rules/validator-slug-validation-rule';
 
 class ValidatorValidationRuleBuilder implements ValidationRuleBuilder {
   public readonly rules: ValidationRule[];

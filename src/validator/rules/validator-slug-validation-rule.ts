@@ -1,9 +1,17 @@
 import { ValidationRule } from '@/protocols/validation-rule';
 import { Validation } from '@/protocols/validation';
+import validator from 'validator';
 
 class ValidatorSlugValidationRule implements ValidationRule {
   passes(name: string, value: string): Validation {
-    throw new Error('Method not implemented.');
+    const passed = validator.isSlug(value);
+
+    return {
+      passed,
+      name,
+      messages: passed ? [] : [`The ${name} format is invalid.`],
+      received: value,
+    };
   }
 }
 

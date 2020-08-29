@@ -11,3 +11,4 @@ export { default as ValidatorEqualsValidationRule } from './validator-equals-val
 export { default as ValidatorRegexValidationRule } from './validator-regex-validation-rule';
 export { default as ValidatorAlphanumericValidationRule } from './validator-alphanumeric-validation-rule';
 export { default as ValidatorBooleanValidationRule } from './validator-boolean-validation-rule';
+export { default as ValidatorSlugValidationRule } from './validator-slug-validation-rule';
