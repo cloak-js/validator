@@ -10,7 +10,7 @@ export default class ValidatorRequiredValidationRule implements ValidationRule {
       name,
       passed,
       messages: passed ? [] : [`The ${name} field is required.`],
-      received: value,
+      value,
     };
   }
 }

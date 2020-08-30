@@ -28,7 +28,7 @@ describe('[Validator] integer validation rule', () => {
     expect(validation.passed).toBeTruthy();
     expect(validation.name).toBe(params.name);
     expect(validation.messages.length).toBe(0);
-    expect(validation.received).toBe(params.value);
+    expect(validation.value).toBe(params.value);
   });
 
   it('fails if isInt returns false', () => {
@@ -42,6 +42,6 @@ describe('[Validator] integer validation rule', () => {
     expect(validation.passed).toBeFalsy();
     expect(validation.name).toBe(params.name);
     expect(validation.messages[0]).toBe(`The ${params.name} must be an integer.`);
-    expect(validation.received).toBe(params.value);
+    expect(validation.value).toBe(params.value);
   });
 });

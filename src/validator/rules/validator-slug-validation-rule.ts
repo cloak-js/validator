@@ -10,7 +10,7 @@ class ValidatorSlugValidationRule implements ValidationRule {
       passed,
       name,
       messages: passed ? [] : [`The ${name} format is invalid.`],
-      received: value,
+      value,
     };
   }
 }

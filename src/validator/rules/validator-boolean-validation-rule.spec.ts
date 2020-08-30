@@ -36,7 +36,7 @@ describe('Validator boolean validation rule', () => {
     expect(validation.passed).toBeTruthy();
     expect(validation.name).toBe(params.name);
     expect(validation.messages.length).toBe(0);
-    expect(validation.received).toBe(params.value);
+    expect(validation.value).toBe(params.value);
   });
 
   it('fails if isBoolean returns false', () => {
@@ -49,6 +49,6 @@ describe('Validator boolean validation rule', () => {
     expect(validation.passed).toBeFalsy();
     expect(validation.name).toBe(params.name);
     expect(validation.messages[0]).toBe(`The ${params.name} field must be true or false.`);
-    expect(validation.received).toBe(params.value);
+    expect(validation.value).toBe(params.value);
   });
 });

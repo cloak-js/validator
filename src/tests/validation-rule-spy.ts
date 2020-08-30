@@ -9,11 +9,11 @@ export default class ValidationRuleSpy implements ValidationRule {
       name: '',
       passed: true,
       messages: [],
-      received: '',
+      value: '',
     };
   }
 
   passes(name: string, value: string): Validation {
-    return Object.assign(this.validation, { name, received: value });
+    return Object.assign(this.validation, { name, value });
   }
 }

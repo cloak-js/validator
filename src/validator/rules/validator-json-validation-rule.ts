@@ -10,7 +10,7 @@ class ValidatorJsonValidationRule implements ValidationRule {
       name,
       passed,
       messages: passed ? [] : [`The ${name} must be a valid JSON string.`],
-      received: value,
+      value,
     };
   }
 }

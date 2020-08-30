@@ -16,7 +16,7 @@ class ValidatorRegexValidationRule implements ValidationRule {
       name,
       passed,
       messages: passed ? [] : [`The ${name} format is invalid.`],
-      received: value,
+      value,
     };
   }
 }

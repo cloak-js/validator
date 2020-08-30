@@ -16,7 +16,7 @@ export default class ValidatorMinLengthValidationRule implements ValidationRule 
       passed,
       name,
       messages: passed ? [] : [`The ${name} must be at least ${this.min} characters.`],
-      received: value,
+      value,
     };
   }
 }

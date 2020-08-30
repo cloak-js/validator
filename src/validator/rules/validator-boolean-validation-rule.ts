@@ -10,7 +10,7 @@ class ValidatorBooleanValidationRule implements ValidationRule {
       passed,
       name,
       messages: passed ? [] : [`The ${name} field must be true or false.`],
-      received: value,
+      value,
     };
   }
 }

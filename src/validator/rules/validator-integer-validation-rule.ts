@@ -10,7 +10,7 @@ export default class ValidatorIntegerValidationRule implements ValidationRule {
       passed,
       name,
       messages: passed ? [] : [`The ${name} must be an integer.`],
-      received: value,
+      value,
     };
   }
 }

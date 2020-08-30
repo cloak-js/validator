@@ -28,7 +28,7 @@ describe('Validator regex validation rule', () => {
     const validation = rule.passes(params.name, params.value);
 
     expect(validation.name).toBe(params.name);
-    expect(validation.received).toBe(params.value);
+    expect(validation.value).toBe(params.value);
   });
 
   it('passes if matches returns true', () => {

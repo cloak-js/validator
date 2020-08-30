@@ -10,7 +10,7 @@ class ValidatorNumericValidationRule implements ValidationRule {
       name,
       passed,
       messages: passed ? [] : [`The ${name} must be a number.`],
-      received: value,
+      value,
     };
   }
 }

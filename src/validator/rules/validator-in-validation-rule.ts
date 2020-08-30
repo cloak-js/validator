@@ -16,7 +16,7 @@ class ValidatorInValidationRule implements ValidationRule {
       passed,
       name,
       messages: passed ? [] : [`The ${name} is invalid.`],
-      received: value,
+      value,
     };
   }
 }

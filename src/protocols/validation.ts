@@ -1,6 +1,6 @@
 export type Validation = {
   name: string;
   passed: boolean;
-  received: string;
+  value: string;
   messages: string[];
 }

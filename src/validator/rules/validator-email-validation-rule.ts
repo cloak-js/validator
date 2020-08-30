@@ -10,7 +10,7 @@ export default class ValidatorEmailValidationRule implements ValidationRule {
       passed,
       name,
       messages: passed ? [] : [`The ${name} must be a valid email address.`],
-      received: value,
+      value,
     };
   }
 }

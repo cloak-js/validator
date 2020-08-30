@@ -26,7 +26,7 @@ describe('Validator URL validation rule', () => {
     const validation = rule.passes(params.name, params.value);
 
     expect(validation.name).toBe(params.name);
-    expect(validation.received).toBe(params.value);
+    expect(validation.value).toBe(params.value);
   });
 
   it('passes if isURL returns true', () => {

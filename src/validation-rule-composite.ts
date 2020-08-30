@@ -13,7 +13,7 @@ export default class ValidationRuleComposite implements ValidationRule {
       name,
       passed: true,
       messages: [],
-      received: value,
+      value,
     };
 
     this.rules.forEach((rule) => {

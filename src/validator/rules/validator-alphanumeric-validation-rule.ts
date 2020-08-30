@@ -10,7 +10,7 @@ class ValidatorAlphanumericValidationRule implements ValidationRule {
       passed,
       name,
       messages: passed ? [] : [`The ${name} may only contain letters and numbers.`],
-      received: value,
+      value,
     };
   }
 }
