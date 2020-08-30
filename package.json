@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "author": "Gustavo Gentil <gustavorgentil@outlook.com>",
   "license": "ISC",
-  "types": "./dist",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "commit": "cz",
     "build": "babel src --out-dir dist --extensions \".ts\" --no-copy-ignored --delete-dir-on-start && npm run ts:declare",

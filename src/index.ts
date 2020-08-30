@@ -1,3 +1,3 @@
-import ValidationRuleFactory from './validation-rule-factory';
+export { ValidationRule } from './protocols/validation-rule';
 
-module.exports = ValidationRuleFactory;
+export { default as ValidationRuleFactory } from './validation-rule-factory';
