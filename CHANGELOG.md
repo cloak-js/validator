@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/cloak-js/validator/compare/v1.2.0...v2.0.0) (2020-08-30)
+
+
+### Bug Fixes
+
+* export ValidationRule and ValidationRuleFactory on the entry point ([916717c](https://github.com/cloak-js/validator/commit/916717c6a27ec0326b5ad303ff4994701179316c))
+
+
+### Features
+
+* ensure builder registers and instance of SlugValidationRule ([ee0e311](https://github.com/cloak-js/validator/commit/ee0e3114879b239595604771057e60844c59e638))
+* ensure ValidatorSlugValidationRule calls isSlug with the correct values ([d8ffe83](https://github.com/cloak-js/validator/commit/d8ffe83f083df1540d65f20ac9a0717840af545c))
+
+
+### BREAKING CHANGES
+
+* no more default export on the entry point
+
 # [1.2.0](https://github.com/cloak-js/validator/compare/v1.1.0...v1.2.0) (2020-08-27)
 
 

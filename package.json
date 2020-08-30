@@ -1,6 +1,6 @@
 {
   "name": "@cloak-js/validator",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "author": "Gustavo Gentil <gustavorgentil@outlook.com>",
   "license": "ISC",
   "main": "./dist/index.js",
